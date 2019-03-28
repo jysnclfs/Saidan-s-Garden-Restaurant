@@ -1,0 +1,56 @@
+.front-logo {
+    height: 333px;
+}
+
+.has-background-white-light {
+    background-color: #efefef !important
+}
+
+.navbar-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    a.navbar-item:hover{
+        color: black !important
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar-style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image.is-128x128 {
+        height: 275px !important;
+        width: 275px !important;
+    }
+}
+
+.is-mx-auto{
+    margin: auto
+}
+
+.is-pt-2{
+    margin-top: 1rem
+}
+
+.footer-item-header {
+    font-size: 16px;
+    margin: 0 0 12px;
+    font-family: Poppins,sans-serif;
+    letter-spacing: 0;
+    color: #76808d;
+}
+
+.footer-item {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 30px;
+}
