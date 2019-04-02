@@ -44,7 +44,7 @@
                 </div>
             </div>
             <p class="has-text-centered copyright has-text-grey">
-                Copyright©2018 Anyshortcut.com. All rights reserved
+                Copyright©2018. All rights reserved
             </p>
         </div>
     </div>

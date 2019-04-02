@@ -13,6 +13,18 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
+Route::get('/user', function (Request $request) {
     return $request->user();
+});
+
+
+Route::get('/categories', 'Admin\CategoryController@index');
+Route::post('/category', 'Admin\CategoryController@store');
+
+// Todo: Add to controler
+Route::post('/add-image', function (Request $request) {
+    $file = $request->file('file');
+    $dir = 'public/images';
+    $path = $file->store($dir);
+    return str_replace("$dir/", '', $path);
 });

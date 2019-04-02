@@ -31,7 +31,7 @@
                 <li><a>Reservations</a></li>
                 <li><a>Location & Hours</a></li>
                 <li><a>Contact</a></li>
-                <li><a>Login </a></li>
+                <li><a href="{{ route('login') }}">Login </a></li>
                 <li><a>Register</a></li>
             </ul>
         </div>
@@ -50,7 +50,7 @@
                 id sodales. Aliquam eget tempus nulla. Fusce vel luctus velit. Donec at nunc sed elit scelerisque condimentum a nec diam. 
                 Integer ac velit non nibh imperdiet suscipit. Nunc non turpis viverra, hendrerit purus vulputate, ultrices ex.</p>
             <figure class="image is-2by1">
-                <img src="https://bulma.io/images/placeholders/480x480.png">
+                <img src="/images/featured.jpeg">
             </figure>    
         </div>    
     </div>

@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+
+Route::prefix('admin')->name('admin.')->middleware(['verified','auth'])->namespace('Admin')->group(function () {
+    // Route::get('/categories', 'CategoryController@index')->name('category.index');
+});
+
